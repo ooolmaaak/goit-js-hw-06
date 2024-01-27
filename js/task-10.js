@@ -59,3 +59,12 @@ function destroyBoxes() {
   boxes.innerHTML = "";
 }
 
+const customCursor = document.getElementById("custom-cursor");
+
+document.addEventListener("mousemove", (e) => {
+  const x = e.clientX;
+  const y = e.clientY;
+
+  customCursor.style.left = `${x}px`;
+  customCursor.style.top = `${y}px`;
+});

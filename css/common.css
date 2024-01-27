@@ -53,3 +53,13 @@ button {
 .validation-input.invalid {
   border-color: #f44336;
 }
+
+#custom-cursor {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
